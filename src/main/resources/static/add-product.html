@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Add New Product</h1>
+    <nav>
+        <a href="index.html">Products</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="orders.html">Orders</a>
+        <a href="add-product.html">Add Product</a>
+    </nav>
+</header>
+
+<main>
+    <form id="productForm">
+        <label>Name: <input type="text" id="productName" required></label><br>
+        <label>Description: <input type="text" id="productDescription" required></label><br>
+        <label>Price: <input type="number" id="productPrice" step="0.01" required></label><br>
+        <button type="submit">Add Product</button>
+    </form>
+    <div id="productMessage"></div>
+</main>
+
+<script src="script.js"></script>
+<script>
+    document.getElementById("productForm").addEventListener("submit", addProduct);
+</script>
+</body>
+</html>

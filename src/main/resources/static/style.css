@@ -1,0 +1,121 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #283655, #4D648D);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 15px;
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background: #FFD700;
+    color: #283655;
+}
+
+/* ===== Main Sections ===== */
+main {
+    padding: 25px;
+}
+
+h2 {
+    color: #283655;
+    margin-bottom: 15px;
+}
+
+div {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* ===== Buttons ===== */
+button {
+    margin: 5px;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    font-weight: bold;
+}
+
+/* Primary (blue) */
+button.primary {
+    background: #355CFF;
+}
+button.primary:hover {
+    background: #253bb5;
+}
+
+/* Success (green) */
+button.success {
+    background: #28a745;
+}
+button.success:hover {
+    background: #1e7e34;
+}
+
+/* Warning (orange) */
+button.warning {
+    background: #ff9800;
+}
+button.warning:hover {
+    background: #e68900;
+}
+
+/* Danger (red) */
+button.danger {
+    background: #d32f2f;
+}
+button.danger:hover {
+    background: #9a0007;
+}
+
+/* Input fields */
+input, select {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    width: 220px;
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: #355CFF;
+    box-shadow: 0 0 6px rgba(53,92,255,0.5);
+}

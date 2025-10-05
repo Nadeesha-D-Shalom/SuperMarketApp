@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Feedback Management</h1>
+    <nav>
+        <a href="index.html">Products</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="orders.html">Orders</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Submit New Feedback</h2>
+    <form id="feedbackForm">
+        <label>Username: <input type="text" id="username" required></label><br>
+        <label>Comment: <textarea id="comment" required></textarea></label><br>
+        <label>Rating (1-5): <input type="number" id="rating" min="1" max="5" required></label><br>
+        <label>Product ID: <input type="number" id="productId" required></label><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="feedbackMessage"></div>
+</main>
+
+<script src="script.js"></script>
+<script>
+    document.getElementById("feedbackForm").addEventListener("submit", submitFeedback);
+</script>
+</body>
+</html>
